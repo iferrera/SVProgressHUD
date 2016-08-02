@@ -187,7 +187,7 @@ static const CGFloat SVProgressHUDDefaultAnimationDuration = 0.15;
     [self sharedView].fadeOutAnimationDuration = duration;
 }
 
-+ (void)setLoadingImageView:(UIImageView*) loadingImageView {
++ (void)setLoadingImageView:(UIView*) loadingImageView {
     [self sharedView].loadingImageView = loadingImageView;
 }
 
@@ -1437,7 +1437,7 @@ static const CGFloat SVProgressHUDDefaultAnimationDuration = 0.15;
     if (!_isInitializing) _fadeOutAnimationDuration = duration;
 }
 
-- (void)setLoadingImageView:(UIImageView*) loadingImageView {
+- (void)setLoadingImageView:(UIView*) loadingImageView {
     if (!_isInitializing) _loadingImageView = loadingImageView;
 }
 

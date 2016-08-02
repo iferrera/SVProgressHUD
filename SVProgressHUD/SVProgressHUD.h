@@ -67,7 +67,7 @@ typedef void (^SVProgressHUDDismissCompletion)(void);
 @property (strong, nonatomic) UIView *viewForExtension UI_APPEARANCE_SELECTOR;      // default is nil, only used if #define SV_APP_EXTENSIONS is set
 @property (assign, nonatomic) NSTimeInterval minimumDismissTimeInterval;            // default is 5.0 seconds
 
-@property (strong, nonatomic) UIImageView *loadingImageView;                        // would be used for SVProgressHUDAnimationTypeCustom
+@property (strong, nonatomic) UIView *loadingImageView;                        // would be used for SVProgressHUDAnimationTypeCustom
 
 @property (assign, nonatomic) UIOffset offsetFromCenter UI_APPEARANCE_SELECTOR;     // default is 0, 0
 
@@ -95,7 +95,7 @@ typedef void (^SVProgressHUDDismissCompletion)(void);
 + (void)setFadeInAnimationDuration:(NSTimeInterval)duration;        // default is 0.15 seconds
 + (void)setFadeOutAnimationDuration:(NSTimeInterval)duration;       // default is 0.15 seconds
 
-+ (void)setLoadingImageView:(UIImageView*) loadingImageView;        // default is nil
++ (void)setLoadingImageView:(UIView*) loadingImageView;        // default is nil
 
 #pragma mark - Show Methods
 
