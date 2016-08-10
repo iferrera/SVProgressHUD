@@ -1154,7 +1154,7 @@ static const CGFloat SVProgressHUDDefaultAnimationDuration = 0.15;
         activityIndicatorView.color = self.foregroundColorForStyle;
     }
     else{
-        if(_indefiniteAnimatedView && ![_indefiniteAnimatedView isKindOfClass:[UIImageView class]]){
+        if(_indefiniteAnimatedView && ![_indefiniteAnimatedView isKindOfClass:[UIView class]]){
             [_indefiniteAnimatedView removeFromSuperview];
             _indefiniteAnimatedView = nil;
         }
